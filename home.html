@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap/mdb.css" >
     <link rel="stylesheet" href="js/bootstrap-toc-gh-pages/bootstrap-toc.css">
     <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -35,12 +38,23 @@
               <h1 style="font-size: x-small"> Overview </h1>
             </div>
           </div>
-          <div class="row" id="overview">
-            <div class="col">
+          <div class="row" id="overview" style="font-family: 'Open Sans', sans-serif;">
+            <div class="col p-4">
               <img src="images/food-processor.png" class="img-fluid">
+
             </div>
 
-            <div class="col"></div>
+            <div class="col p-0">
+              <p class="mt-5" style=" font-size: 4.5em;"> The User Experience: <i> food processors </i> </p>
+              <p class="text-left mt-5" style="font-size: large; font-weight: bold; color: rgb(90,166,210)"> The food processor allows its users to quickly
+                slice, chop and grind a variety of foods. The food goes into the main compartment which must be locked on
+                to the base. The buttons are inactive until the two upper pieces are locked on correctly. Once all pieces
+              are locked the blade can be activated and set to spin at different speeds. </p>
+              <p class="text-right mt-3" style="font-size: large; font-weight: bold; "> I interviewed three users on their experience
+              using the KitchenAid food processor. The following is a summary of my observations and users' responses, and an examination of the food processor UX through
+                personas and story-boarding.</p>
+
+            </div>
 
 
           </div>
@@ -50,22 +64,144 @@
 
           <div class="row">
             <div class="col invisible">
-              <h1> Research </h1>
+              <h1> Findings </h1>
             </div>
           </div>
 
           <div class="row text-center"  id="research" style="background-color: rgba(106,188,242,0.87); border-radius: 2em">
-            <div class="col p-4" >
-              <h4> Questions </h4>
-              <p> Have you used a food processor before?
-                <br> Describe your emotions upon
-                <br> On a scale from 1 - 10, how intuitive
-              </p>
+            <div class="col p-4 text-left" >
+              <h4 class="text-center"> Questions </h4>
+
+              <ol  class="question-list" style="font-family: 'Open Sans', sans-serif; color: white; font-size: x-large" >
+
+               <li> What word do you more strongly associate with cooking: chore or hobby?</li>
+              <li>  How would you describe your cooking habits on a scale from 1-7, 1 being never and 7 being frequently?</li>
+              <li> On a scale from 1-7, 1 being unsure and 7 being completely confident, how do you feel in the kitchen?</li>
+              <li> Have you used a food processor before?</li>
+              <li> Choose 2-3 words that describe your emotions upon seeing the device.</li>
+              <li> Choose 2-3 words that describe your emotions <i> after </i> using the device.</li>
+              <li> Rate the interface on a scale from 1 - 7, 1 being very complicated and 7 being very intuitive.</li>
+              <li> What percentage of the time using the device was spent setting it up?</li>
+              <li> During the process of setting up the device, how confident were you that you were setting it up "correctly?" Rate
+              your confidence on a scale from 1-7, 1 being very unsure and 7 being very confident.</li>
+            <li> What was the most prominent thought you had while using the device?</li>
+            <li> What was the most prominent thought you had <i> after </i> using the device?</li>
+            <li> How likely are you to use this device in the future? [not likely, indifferent, likely, very likely]</li>
+
+
+              </ol>
+
 
             </div>
-            <div class="col p-4">
-              <h4> Findings </h4>
-              <p> blah blah blah blah </p>
+            <div class="col p-4 ">
+              <h4> Responses & Observations </h4>
+
+              <div class="card text-left  "  style="font-family: 'Open Sans', sans-serif; font-size: large">
+                <div class="card-header "> User 1 </div>
+                <div class="card-body pl-3">
+                  <b> Responses </b>
+                  <ul >
+                    <li> Considered himself to be an experienced chef who enjoys cooking, had used a food processor before. </li>
+                    <li> Found the interface to be "frustrating" and "upsetting" </li>
+                    <li> Felt it was "unintuitive" </li>
+                    <li> Felt that the majority of his time spent using the device was devoted to setup</li>
+                    <li> Noted the "inefficiency" of the process</li>
+                  </ul>
+
+                  <b> Observations </b>
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li> muttered to himself</li>
+                        <li> laughed multiple times</li>
+
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul class="right-list" >
+                        <li > often squinted at the device</li>
+                        <li> "I know I locked it correctly"</li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+
+              <div class="card text-left mt-1  "  style="font-family: 'Open Sans', sans-serif; font-size: large">
+                <div class="card-header  "> User 2 </div>
+                <div class="card-body pl-3">
+                  <b> Responses </b>
+                  <ul >
+                    <li> herself to be an inexperienced cook, associates cooking with the
+                      "chore." </li>
+                    <li> strongest feeling throughout the process was "confusion" </li>
+                    <li> Noted she could not accurately gage the effectiveness of her actions to set up the device. </li>
+                    <li> expressed that the interface was "complicated" </li>
+                    <li> Noted the "inefficiency" of the process</li>
+                  </ul>
+
+                  <b> Observations </b>
+
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li > "this really shouldn't be this hard"</li>
+                        <li > stared at the device for long periods of time</li>
+
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul class="right-list" >
+                        <li> cursed multiple times </li>
+                        <li> repeatedly hit start button</li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+
+              <div class="card text-left mt-1  "  style="font-family: 'Open Sans', sans-serif; font-size: large">
+                <div class="card-header  "> User 3 </div>
+                <div class="card-body pl-3">
+                  <b> Responses </b>
+                  <ul >
+                    <li> considered herself to be an inexperienced chef, associated cooking with "fun" </li>
+                    <li> Her initial reaction to seeing the device was "overwhelmed." </li>
+                    <li> "Confusion" during the set-up process lead to "undesirable inefficiency" </li>
+                    <li> expressed there was "really no way to know what part was incorrect." </li>
+                    <li> Felt it was unlikely that she use a food processor in the future</li>
+                  </ul>
+
+                  <b> Observations </b>
+
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li > Checked that the device was plugged in multiple times</li>
+                        <li > "Am I doing this right?"</li>
+
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul class="right-list" >
+                        <li> Asked for help </li>
+                        <li> Expressed that she thought the device was broken </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+
+
             </div>
           </div>
 
@@ -80,9 +216,13 @@
         <div class="row" id="moodBoards">
           <div class="col">
             <div class="row">
-              <div class="col-xl-5 order-xl-1" >
+              <div class="col-xl-5 order-xl-1" style="font-family: 'Open Sans', sans-serif; font-size: large">
                 <img src="images/woman-icon.png" class="img-fluid  mx-auto d-block">
                 <p class="text-center mt-2" style="font-family: 'Open Sans', sans-serif; font-size: x-large"> Amateur Amanda </p>
+                <p > Amateur Amanda is a recent college graduate
+                who is learning how to cook. A recipe she is following calls for the use of a food processor. She finds the interface confusing and unintuitive - she spends a long time on the set-up process.</p>
+                <p> This persona was constructed from the pattern of confusion and doubt displayed by the users, and the
+                  subsequent lack of confidence during the set-up process of the device. </p>
               </div>
               <div class="col-xl-7 order-xl-0" >
 
@@ -93,7 +233,7 @@
                       <p class="section-title"> thinks </p>
                       <ul class="post-it-list">
                         <li> <div> <p> Is it supposed to be this hard?</p>  </div> </li>
-                        <li> <div> <p> Maybe I should do this by hand</p>  </div> </li>
+                        <li> <div> <p> Maybe I should do this by hand.</p>  </div> </li>
                         <li> <div> <p> why can't I press the buttons?</p>  </div> </li>
 
                       </ul>
@@ -103,10 +243,10 @@
                     <div class="col-sm" style="border-bottom: solid black">
                       <p class="section-title" > feels </p>
                       <ul class="post-it-list">
-                        <li> <div> <p>Frustrated by the difficulty</p>  </div> </li>
+                        <li> <div> <p>Completely confused </p>  </div> </li>
                         <li> <div> <p>Fear of looking "stupid"</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
+                        <li> <div> <p>Upset at the lack of instruction</p>  </div> </li>
+                        <li> <div> <p></p> defeated </div> </li>
 
                       </ul>
 
@@ -117,20 +257,19 @@
                     <div class="col-sm" style="border-right: solid black;" >
                       <p class="section-title"> says </p>
                       <ul class="post-it-list">
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
+                        <li> <div> <p>"Does this look right to you?"</p>  </div> </li>
+                        <li> <div> <p>"I have no idea why it won't turn on!"</p>  </div> </li>
+                        <li> <div> <p>"This shouldn't be this hard"</p>  </div> </li>
+                        <li> <div> <p>"I think this thing is broken."</p>  </div> </li>
 
                       </ul>
                     </div>
                     <div class="col-sm">
                       <p class="section-title"> does </p>
                       <ul class="post-it-list">
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
+                        <li> <div> <p>Repeatedly presses the start buttons</p>  </div> </li>
+                        <li> <div> <p>Stares at the device with bewilderment</p>  </div> </li>
+                        <li> <div> <p>Reassembles the device multiple times</p>  </div> </li>
 
                       </ul>
                     </div>
@@ -141,12 +280,17 @@
 
             </div>
             <div class="row" style="margin-top: 4em">
-              <div class="col-md-5">
+              <div class="col-xl-5" style="font-family: 'Open Sans', sans-serif; font-size: large">
                 <img src="images/man-icon.png" class="img-fluid  mx-auto d-block">
                 <p class="text-center mt-2" style="font-family: 'Open Sans', sans-serif; font-size: x-large"> Multitasking Matt </p>
+                <p> Multitasking Matt is an experienced chef who likes to cook efficiently - he is often doing many things
+                in the kitchen at once. He is frustrated by the design of the device, and particularly that he is unable
+                to determine which pieces are misplaced when it fails to start. </p>
+                <p> This persona was constructed from the frustration the users displayed while trying to assemble the interface,
+                and the expressed annoyance at the time wasted "trouble-shooting."</p>
 
               </div>
-              <div class="col-md-7" >
+              <div class="col-xl-7" >
 
                 <div class="mood-board text-center">
                   <div class="row">
@@ -154,8 +298,8 @@
                       <p class="section-title"> thinks </p>
                       <ul class="post-it-list">
                         <li> <div> <p> Why isn't this easier by now?</p>  </div> </li>
-                        <li> <div> <p> hello hey what blah poo </p>  </div> </li>
-                        <li> <div> <p> </p>  </div> </li>
+                        <li> <div> <p> This is a waste of my time! </p>  </div> </li>
+                        <li> <div> <p> I know I locked the pieces in correctly! </p>  </div> </li>
 
                       </ul>
 
@@ -164,9 +308,9 @@
                     <div class="col-sm" style="border-bottom: solid black">
                       <p class="section-title" > feels </p>
                       <ul class="post-it-list">
-                        <li> <div> <p></p>  </div> </li>
-                        <li> <div> <p></p>  </div> </li>
-                        <li> <div> <p></p>  </div> </li>
+                        <li> <div> <p></p> frustration and anger</div> </li>
+                        <li> <div> <p></p> resentment towards the device </div> </li>
+                        <li> <div> <p></p> increasingly overwhelmed </div> </li>
 
                       </ul>
 
@@ -178,19 +322,18 @@
                       <p class="section-title"> says </p>
                       <ul class="post-it-list">
                         <li> <div> <p> I have other things to do right now!</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
+                        <li> <div> <p> Someone check on my rice!</p>  </div> </li>
+                        <li> <div> <p> Are you kidding me?</p>  </div> </li>
 
                       </ul>
                     </div>
                     <div class="col-sm">
                       <p class="section-title"> does </p>
                       <ul class="post-it-list">
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
-                        <li> <div> <p>Text Content #1</p>  </div> </li>
+                        <li> <div> <p> Repeatedly checks the time</p>  </div> </li>
+                        <li> <div> <p> Adjusts the pieces multiple times</p>  </div> </li>
+                        <li> <div> <p> Moves the device to a different outlet</p>  </div> </li>
+                        <li> <div> <p> Shakes the device </p>  </div> </li>
 
                       </ul>
                     </div>
@@ -215,6 +358,82 @@
             </div>
           </div>
 
+          <div class="row row-cols-2" style="padding: 7em">
+            <div class="col">
+              <div class="card m-1">
+                <img class="card-img-top" src="images/drawing-1.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"> It's 7pm and multitasking Matt has just rushed home from a busy day at work. His dinner party starts in 30 minutes so he
+                  gets straight to cooking - there's no time to waste!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card m-1">
+                <img class="card-img-top" src="images/drawing-2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">To save some time, Matt decides to chop his vegetables in his food processor. He runs
+                  to the counter to begin the assembly. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card m-1">
+                <img class="card-img-top" src="images/drawing-3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"> As soon as the base is locked in place, Matt grabs his produce and throws it in. He looks over his shoulder
+                  to check that nothing's burning on the stove. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card m-1">
+                <img class="card-img-top" src="images/drawing-4.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text"> Multitasking Matt rushes to fit the pieces together and slams the start button, but to no avail.
+                  Surprised, he presses it again -- still nothing. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card m-1">
+                <img class="card-img-top" src="images/drawing-5.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text"> He checks to make sure its plugged in (it is) and stares at the device with frustration. He
+                  finally notices that the center piece is not completely secured to the base. He fidgets with the pieces for what feels like minutes. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card m-1">
+                <img class="card-img-top" src="images/drawing-6.jpeg" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text"> Finally he hears a click. Matt slams the lid shut, but before his finger reaches the start button
+                  he is assaulted by the blaring sound of his smoke detector! The oil had begun to burn!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card m-1">
+                <img class="card-img-top" src="images/drawing-7.jpg" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text"> Matt runs to turn off the heat and extinguish the fire. Defeated, he calls his friends and asks them to reschedule. </p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
 
 
 
@@ -232,13 +451,14 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <script src="js/bootstrap-toc-gh-pages/bootstrap-toc.js"></script>
 
 

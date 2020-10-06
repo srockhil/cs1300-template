@@ -95,4 +95,16 @@
     color: #ffffff;
 }
 
+.card-body ul {
+    list-style: circle;
+    font-size: medium;
+    color: #4b4a4a;
+}
 
+.right-list {
+    padding-left: 1em;
+}
+
+.question-list li {
+    margin-top: 1em;
+}
